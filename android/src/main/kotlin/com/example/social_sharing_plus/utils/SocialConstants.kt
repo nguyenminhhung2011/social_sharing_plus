@@ -11,6 +11,9 @@ object SocialConstants {
     const val WHATSAPP = "shareToWhatsApp"
     const val REDDIT = "shareToReddit"
     const val TELEGRAM = "shareToTelegram"
+    // Nguyen Minh Hung update
+    const val ZALO = "shareToZalo"
+    const val INSTAGRAM = "shareToInstagram"
 
     // PACKAGE NAMES
     const val FACEBOOK_PACKAGE_NAME = "com.facebook.katana"
@@ -19,6 +22,9 @@ object SocialConstants {
     const val WHATSAPP_PACKAGE_NAME = "com.whatsapp"
     const val REDDIT_PACKAGE_NAME = "com.reddit.frontpage"
     const val TELEGRAM_PACKAGE_NAME = "org.telegram.messenger"
+    const val ZALO_PACKAGE_NAME = "com.zing.zalo"
+    const val INSTAGRAM_PACKAGE_NAME = "com.instagram.android"
+
 
     // WEB URL
     const val FACEBOOK_WEB_URL = "https://www.facebook.com/sharer/sharer.php?u="
@@ -27,4 +33,6 @@ object SocialConstants {
     const val WHATSAPP_WEB_URL = "https://api.whatsapp.com/send?text="
     const val REDDIT_WEB_URL = "https://www.reddit.com/submit?title="
     const val TELEGRAM_WEB_URL = "https://t.me/share/url?url="
+    const val ZALO_WEB_URL = "https://zalo.me/share?url="
+    const val INSTAGRAM_WEB_URL = "https://www.instagram.com/" // Instagram does not support web sharing like others
 }

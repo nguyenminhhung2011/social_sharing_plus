@@ -5,58 +5,58 @@ enum SocialPlatform {
   /// For [iOS], only URL sharing is supported.
   ///
   /// For [Android], you can share both text, images and video in groups, as a profile picture, as a post/story or message.
-  facebook,
+  facebook('shareToFacebook'),
 
   /// Represents LinkedIn.
   ///
   /// For [iOS], only text sharing is supported.
   ///
   /// For [Android], you can share both text, images and video in groups, as a post or message.
-  linkedin,
+  linkedin('shareToLinkedIn'),
 
   /// Represents Reddit.
   ///
   /// For [iOS], only text sharing is supported.
   ///
   /// For [Android], you can share both text, images and video as a post.
-  reddit,
+  reddit('shareToReddit'),
 
   /// Represents Reddit.
   ///
   /// For [iOS], only text sharing is supported.
   ///
   /// For [Android], you can share both text, images and video in groups, as a tweet or message.
-  twitter,
+  twitter('shareToTwitter'),
 
   /// Represents WhatsApp.
   ///
   /// For [iOS], only text sharing is supported.
   ///
   /// For [Android], you can share both text, images and videos.
-  whatsapp,
+  whatsapp('shareToWhatsApp'),
+
+  /// Represents zalo
+  ///
+  /// For [iOS], only text sharing is supported.
+  ///
+  /// For [Android], you can share both text, images and videos.
+  zalo('shareToZalo'),
+
+  /// Represents Instagram
+  ///
+  /// For [iOS], only text sharing is supported.
+  ///
+  /// For [Android], you can share both text, images and videos.
+  instagram('shareToInstagram'),
 
   /// Represents Telegram.
   ///
   /// For [iOS], only text sharing is supported.
   ///
   /// For [Android], you can share both text, images and videos.
-  telegram;
+  telegram('shareToTelegram');
 
-  /// Returns the method name corresponding to each social media platform.
-  String get methodName {
-    switch (this) {
-      case SocialPlatform.facebook:
-        return 'shareToFacebook';
-      case SocialPlatform.linkedin:
-        return 'shareToLinkedIn';
-      case SocialPlatform.reddit:
-        return 'shareToReddit';
-      case SocialPlatform.twitter:
-        return 'shareToTwitter';
-      case SocialPlatform.whatsapp:
-        return 'shareToWhatsApp';
-      case SocialPlatform.telegram:
-        return 'shareToTelegram';
-    }
-  }
+  final String methodName;
+
+  const SocialPlatform(this.methodName);
 }

@@ -43,7 +43,7 @@ class MethodChannelSocialSharingPlus extends SocialSharingPlusPlatform {
 
   /// Shares content to the specified social media platform with multiple media files.
   ///
-  /// This method allows sharing multiple media files (images or videos) to the selected social media platform.
+  /// This method allows sharing multiple medi12a files (images or videos) to the selected social media platform.
   /// Currently, this feature is only supported on [Android].
   ///
   /// * [socialPlatform]: The platform to share the content on.

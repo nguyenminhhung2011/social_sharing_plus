@@ -40,6 +40,10 @@ class SocialSharingPlusPlugin : FlutterPlugin, MethodCallHandler {
                     shareToSocialMedia(SocialConstants.REDDIT_PACKAGE_NAME, call, result)
             SocialConstants.TELEGRAM ->
                     shareToSocialMedia(SocialConstants.TELEGRAM_PACKAGE_NAME, call, result)
+            SocialConstants.ZALO ->
+                    shareToSocialMedia(SocialConstants.ZALO_PACKAGE_NAME, call, result)
+            SocialConstants.INSTAGRAM ->
+                    shareToSocialMedia(SocialConstants.INSTAGRAM_PACKAGE_NAME, call, result)
             else -> result.notImplemented()
         }
     }
@@ -178,6 +182,10 @@ class SocialSharingPlusPlugin : FlutterPlugin, MethodCallHandler {
                             "${SocialConstants.REDDIT_WEB_URL}$content"
                     SocialConstants.TELEGRAM_PACKAGE_NAME ->
                             "${SocialConstants.TELEGRAM_WEB_URL}$content"
+                    SocialConstants.ZALO_PACKAGE_NAME ->
+                            "${SocialConstants.ZALO_WEB_URL}$content"
+                    SocialConstants.INSTAGRAM_PACKAGE_NAME ->
+                            "${SocialConstants.INSTAGRAM_WEB_URL}$content"
                     else -> null
                 }
 
